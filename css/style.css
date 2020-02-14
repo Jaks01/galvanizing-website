@@ -1,0 +1,19 @@
+body{
+    zoom: 1;
+    transform: scale(1.0);
+    transform-origin: 0 0;
+    background: black;
+}
+
+.wrapper{
+    opacity: 0;
+    font-family: custom-normal;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    box-sizing: content-box;
+    padding: 0px;
+    background: black;
+ 
+}
