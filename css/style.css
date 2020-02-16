@@ -8,12 +8,82 @@ body{
 .wrapper{
     opacity: 1;
     font-family: custom-normal;
-    max-width: 1920px;
     margin: auto;
     position: relative;
     overflow: hidden;
     box-sizing: content-box;
     padding: 0px;
-    background: black;
+    background: rgba(0, 0, 0, 0.9);
     color:white;
+}
+
+.main-panel{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.main-panel-content{
+    position: relative;
+    width: 700px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.main-nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    margin-bottom: 30%;
+}
+
+.nav-button{
+    width: 20%;
+    margin: 5% 10%;
+    text-align: center;
+}
+
+.text-block{
+    position: relative;
+    transform: translateY(-60%);
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-main{
+    height: 70%;
+    width: 100%;
+    font-size: 100px;
+    text-align: center;
+}
+
+.text-sub{
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.video-containter{
+    background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  pointer-events: none;
 }

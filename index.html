@@ -12,10 +12,16 @@
 
 </head>
 
-<body>
+<body onload="adjustHeight()">
     <div class="wrapper">
-        <div class="main-panel">
+        <div class="main-panel" id="main-panel">
             <div class="main-panel-content">
+                <nav class="main-nav">
+                    <span class="nav-button">Info</span>
+                    <span class="nav-button">Chemistry</span>
+                    <span class="nav-button">Advertisement</span>
+                </nav>
+
                 <div class="text-block">
                     <div class="text-main">
                         <h1>Galvanizing</h1>
@@ -24,17 +30,18 @@
                         "quote about galvanizing"
                     </div>
                 </div>
-                <div class="main-play-btn">
-                    <img src="img/play-btn.png" >
-                </div>
-            </div>
-            <div class="video-containter">
-                <div class="video">
-
-                </div>
             </div>
         </div>
+        <div class="video-containter">
+            <iframe class="video" src="https://www.youtube.com/embed/XkagRCnJyV8?controls=0&showinfo=0&autoplay=1&loop=1&mute=1&playlist=XkagRCnJyV8" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+        </div>
     </div>
+
+    <script>
+        function adjustHeight(){
+            document.getElementById("main-panel").style.height = window.innerHeight +"px";
+        }
+    </script>
 </body>
 
 </html>
