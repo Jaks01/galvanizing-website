@@ -3,18 +3,20 @@ body{
     transform: scale(1.0);
     transform-origin: 0 0;
     background: black;
+    overflow: hidden;
 }
 
 .wrapper{
     opacity: 1;
-    font-family: custom-normal;
+    font-family: 'IBM Plex Sans', sans-serif;
     margin: auto;
     position: relative;
     overflow: hidden;
     box-sizing: content-box;
     padding: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    color:white;
+    background: rgba(52, 50, 51, 0.95);
+    
+    color: #fff9f0;
 }
 
 .main-panel{
@@ -26,35 +28,47 @@ body{
 
 .main-panel-content{
     position: relative;
-    width: 700px;
+    width: 800px;
     height: 100%;
     margin: auto;
     display: flex;
     flex-flow: column;
+
 }
 
 .main-nav{
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 10%;
-    margin-bottom: 30%;
+    height: 50px;
+    margin-top: 5%;
 }
 
 .nav-button{
     width: 20%;
-    margin: 5% 10%;
+    margin: 0 5%;
+    padding: 0 5%;
+    line-height: 50px;
+    height: 50px;
     text-align: center;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+}
+
+.nav-button:hover{
+    box-shadow: 0px 2px 5px 1px rgb(32, 31, 31);
+    background-color:  rgba(52, 50, 51, 1);
+    color: #fffdfa;
 }
 
 .text-block{
     position: relative;
-    transform: translateY(-60%);
-    height: 200px;
+    height: 300px;
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
+    transition: all 1s;
 }
 
 .text-main{
@@ -63,27 +77,101 @@ body{
     font-size: 100px;
     text-align: center;
 }
+.text-main span{
+    transition: font-size 0.5s ease-in-out;
+}
+.text-main span:hover{
+    font-size: 105px;
+}
 
 .text-sub{
     height: 30%;
     width: 100%;
     text-align: center;
 }
+.text-sub span{
+    transition: font-size 0.5s ease-in-out;
+}
+
+.text-sub span:hover{
+    font-size: 20px;
+}
+
+.play-button-block{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    margin: auto 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.play-instruction{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    line-height: 20px;
+    text-align: center;
+}
+
+.play-instruction span{
+    line-height: 30px;
+    transition: font-size 0.5s ease-in-out;
+}
+
+.play-instruction span:hover{
+    font-size: 20px;
+}
+
+.play-button-container{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+}
+.play-button-container:hover{
+    box-shadow: 0px 2px 5px 1px rgb(32, 31, 31);
+    background-color:  rgba(52, 50, 51, 1);
+    filter: invert(100%);
+}
+
+.play-button-container img{
+    filter: invert(90%);
+
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+
 
 
 .video-containter{
     background: #000;
   position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0; right: 0; bottom: 0; left: 50%;
+  width: 1920px;
+  transform: translateX(-50%);
   z-index: -99;
   overflow: hidden;
 }
 
 .video {
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 120%;
-  height: 120%;
+    position: relative;
+    margin: auto;
+  width: 1920px;
+  height: 1080px;
   pointer-events: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 20px;
+    width: 99%;
+    text-align: right;
+    color: #696662;
+}
+footer a{
+    color: #95835c;
 }

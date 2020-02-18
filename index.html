@@ -8,33 +8,46 @@
     <meta name="description" content="All about galvanizing">
 
     <link rel="stylesheet" href="css/cssreset.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
-<body onload="adjustHeight()">
+<body onload="adjustHeight()" onresize="adjustHeight()">
     <div class="wrapper">
         <div class="main-panel" id="main-panel">
             <div class="main-panel-content">
                 <nav class="main-nav">
-                    <span class="nav-button">Info</span>
-                    <span class="nav-button">Chemistry</span>
-                    <span class="nav-button">Advertisement</span>
+                    <a class="nav-button" href="info.html"><span>Info</span></a>
+                    <a class="nav-button" href="info.html"><span>Chemistry</span></a>
+                    <a class="nav-button" href="info.html"><span>Advertisement</span></a>
                 </nav>
-
                 <div class="text-block">
                     <div class="text-main">
-                        <h1>Galvanizing</h1>
+                        <span>Galvanizing</span>
                     </div>
                     <div class="text-sub">
-                        "quote about galvanizing"
+                        <span>"quote about galvanizing"</span>
+                    </div>
+
+                    <div class="play-button-block">
+                        <div class="play-instruction">
+                            <span>watch our video about galvanizing</span>
+                        </div>
+                        <div class="play-button-container">
+                            <img src="img/play-btn.png">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="video-containter">
-            <iframe class="video" src="https://www.youtube.com/embed/XkagRCnJyV8?controls=0&showinfo=0&autoplay=1&loop=1&mute=1&playlist=XkagRCnJyV8" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+            <video class="video" autoplay loop muted playsinline src="bg.mp4"></video>    
         </div>
+        <footer>
+            website made by: <a href="https://jy.netlify.com/" target="_blank">jackson</a>
+            <br>
+            in collaboration with: jimmy & danielle
+        </footer>
     </div>
 
     <script>
