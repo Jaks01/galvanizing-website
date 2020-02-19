@@ -16,7 +16,7 @@ body{
     background: #393834;
     min-height: 1080px;
     height: 6000px;
-    color: #fff9f0;
+    color: #fcebd1;
 }
 
 .main-nav{
@@ -77,9 +77,9 @@ body{
 
 .text-block-image{
     position: absolute;
-    height: 550px;
-    width: 800px;
-    right: -900px;
+    height: 450px;
+    width: 700px;
+    right: -800px;
     top: 10px;
     border-radius: 10px;
     box-shadow: 0 20px 30px rgba(6, 20, 34, 0.5);
@@ -104,36 +104,41 @@ body{
 
 .b2-heading{
     width: 100%;
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .panel-container{
     width: 100%;
-    height: 520px;
+    height: 1040px;
     display: flex;
     flex-direction: column;
 }
 
 .panel-segment{
-    height: 250px;
+    height: 500px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 2.5%;
+    flex-direction: column;
 }
 
 .panel{
     box-shadow: 0 20px 30px rgba(6, 20, 34, 0.2);
-    margin: auto;
-    width: 47.5%;
+    width: 50%;
     height: 100%;
     border-radius: 5px;
+    margin-bottom: 20px;
     transition: all 0.25s;
 }
 
 .panel:hover{
     box-shadow: 0 20px 30px rgba(6, 20, 34, 0.5);
-    background-color: #5f9ee7;
+    background-color: #68a5b8;
+}
+.panel:hover > .panel-img-container{
+    box-shadow: 0 20px 30px rgba(6, 20, 34, 0.5);
+    filter: none;
+    opacity: 1;
 }
 
 .panel-content{
@@ -141,11 +146,41 @@ body{
     width: 100%;
 }
 
-.panel-content:hover > .panel-header{
+.panel:hover > .panel-content > .panel-header{
     top: 20%;
 }
-.panel-content:hover > .panel-body{
+.panel:hover > .panel-content > .panel-body{
     opacity: 1;
+}
+
+
+.panel-img-container{
+    transition: all 1s;
+    box-shadow: 0 20px 30px rgba(6, 20, 34, 0.2);
+    filter: brightness(0.7) contrast(1) sepia(1) hue-rotate(115deg) saturate(1.5);
+    opacity: 0.5;
+    position: absolute;
+    right: -220px;
+    width: 600px;
+    height: 230px;
+}
+.panel-img-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.panel-img-cont-1{
+    top: 100px;
+}
+.panel-img-cont-2{
+    top: 350px;
+}
+.panel-img-cont-3{
+    top: 600px;
+}
+.panel-img-cont-4{
+    top: 850px;
 }
 
 .panel-header{
@@ -171,6 +206,10 @@ body{
 .block-three{
     position: relative;
     top: 400px;
+}
+.b3-heading{
+    width: 100%;
+    text-align: center;
 }
 
 .b3-segment{
@@ -289,7 +328,7 @@ body{
 
 .block-four{
     position: relative;
-    top: 500px;
+    top: 800px;
 }
 
 .b4-heading{
