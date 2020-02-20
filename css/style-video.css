@@ -3,7 +3,7 @@ body{
     transform: scale(1.0);
     transform-origin: 0 0;
     background: #2e2d2b;
-    overflow: hidden;
+    overflow: hidden scroll;
 }
 
 .wrapper{
